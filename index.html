@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Heitor Mendes Crispim">
+  <meta name="description" content="Apoio à rotina, à memória e à segurança de idosos e pessoas com limitação, e de seus cuidadores.">
+  <meta name="keywords" content="idosos, Alzheimer, rotina, memória, cuidadores, acessibilidade">
+  <title>Cuidar de Perto - Início</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo-linha">
+      <a class="logo" href="index.html">
+        <span class="logo-circulo" aria-hidden="true"></span>
+        <span class="logo-nome">Cuidar de Perto</span>
+      </a>
+      <div class="acessibilidade" role="group" aria-label="Ajustes de leitura">
+        <button type="button" id="fonte-menos">A-</button>
+        <button type="button" id="fonte-mais">A+</button>
+        <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="index.html" aria-current="page">Início</a></li>
+        <li><a href="html/sobre.html">Sobre</a></li>
+        <li><a href="html/meu-dia.html">Meu dia</a></li>
+        <li><a href="html/medicamentos.html">Medicamentos</a></li>
+        <li><a href="html/memorias.html">Memórias</a></li>
+        <li><a href="html/musicas.html">Músicas</a></li>
+        <li><a href="html/relaxamento.html">Relaxamento</a></li>
+        <li><a href="html/emergencia.html">Emergência</a></li>
+        <li><a href="html/cuidador.html">Cuidador</a></li>
+        <li><a href="html/duvidas.html">Dúvidas</a></li>
+        <li><a href="html/contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" aria-labelledby="titulo-inicio">
+      <div>
+        <h1 id="titulo-inicio">Cuidar de Perto</h1>
+        <p class="hero-sub">Apoio à rotina e à memória</p>
+        <p>O Cuidar de Perto é um site de apoio para pessoas idosas, com perda de memória ou limitação de movimento, e para quem cuida delas. Reunimos a rotina do dia, os remédios, as fotos da família e os contatos de emergência em um só lugar, com letras grandes e poucos cliques.</p>
+        <a class="botao" href="html/meu-dia.html">Ver meu dia</a>
+        <a class="botao" href="html/sobre.html">Conhecer o projeto</a>
+      </div>
+      <figure class="video-moldura">
+        <video controls preload="metadata">
+          <source src="video/apresentacao.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+        <figcaption>Vídeo de apresentação do Cuidar de Perto</figcaption>
+      </figure>
+    </section>
+
+    <section class="cartao-data" aria-label="Data de hoje">
+      Hoje é
+      <strong data-hoje>carregando a data...</strong>
+    </section>
+
+    <section aria-labelledby="titulo-atalhos">
+      <h2 id="titulo-atalhos">O que você encontra aqui</h2>
+      <div class="grade">
+        <article class="cartao">
+          <h3>Meu dia</h3>
+          <p>As tarefas de hoje e o quanto já foi feito.</p>
+          <a href="html/meu-dia.html">Abrir Meu dia</a>
+        </article>
+        <article class="cartao">
+          <h3>Medicamentos</h3>
+          <p>Horários e instruções de cada remédio.</p>
+          <a href="html/medicamentos.html">Abrir Medicamentos</a>
+        </article>
+        <article class="cartao">
+          <h3>Memórias</h3>
+          <p>Fotos de familiares com nome e parentesco.</p>
+          <a href="html/memorias.html">Abrir Memórias</a>
+        </article>
+        <article class="cartao">
+          <h3>Emergência</h3>
+          <p>Dados e contatos para qualquer imprevisto.</p>
+          <a href="html/emergencia.html">Abrir Emergência</a>
+        </article>
+      </div>
+    </section>
+
+    <aside class="aviso" aria-label="Aviso importante">
+      <p><mark>Importante:</mark> este site é um apoio para organizar a rotina e não substitui o acompanhamento médico. Os dados de exemplo são fictícios.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cuidar de Perto - projeto acadêmico, UNIPÊ</p>
+  </footer>
+</body>
+</html>

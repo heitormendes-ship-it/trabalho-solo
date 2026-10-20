@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Heitor Mendes Crispim">
+  <meta name="description" content="Registro do dia para cuidadores e familiares.">
+  <meta name="keywords" content="cuidador, registro, humor, acompanhamento">
+  <title>Cuidar de Perto - Cuidador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo-linha">
+      <a class="logo" href="../index.html">
+        <img class="logo-img" src="../img/logo.svg" alt="" width="48" height="48">
+        <span class="logo-nome">Cuidar de Perto</span>
+      </a>
+      <div class="acessibilidade" role="group" aria-label="Ajustes de leitura">
+        <button type="button" id="fonte-menos" aria-label="Diminuir a letra" title="Diminuir a letra">A-</button>
+        <button type="button" id="fonte-mais" aria-label="Aumentar a letra" title="Aumentar a letra">A+</button>
+        <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="meu-dia.html">Meu dia</a></li>
+        <li><a href="medicamentos.html">Medicamentos</a></li>
+        <li><a href="memorias.html">Memórias</a></li>
+        <li><a href="musicas.html">Músicas</a></li>
+        <li><a href="relaxamento.html">Relaxamento</a></li>
+        <li><a href="emergencia.html">Emergência</a></li>
+        <li><a href="cuidador.html" aria-current="page">Cuidador</a></li>
+        <li><a href="duvidas.html">Dúvidas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Área do cuidador</h1>
+    <p>Registre como foi o dia. Este formulário é um exemplo e não guarda os dados.</p>
+
+    <form class="formulario-demo">
+      <fieldset>
+        <legend>Registro do dia</legend>
+
+        <label for="data-registro">Data</label>
+        <input type="date" id="data-registro" name="data" required>
+
+        <label for="humor">Humor hoje, de 0 a 10: <output id="humor-valor">5</output></label>
+        <input type="range" id="humor" name="humor" min="0" max="10" value="5" data-saida="humor-valor">
+
+        <label for="cor-dia">Cor que representa o dia</label>
+        <input type="color" id="cor-dia" name="cor" value="#1f7a6e">
+
+        <label for="alimentacao">Alimentação</label>
+        <select id="alimentacao" name="alimentacao">
+          <option value="boa">Comeu bem</option>
+          <option value="media">Comeu pouco</option>
+          <option value="ruim">Quase não comeu</option>
+        </select>
+
+        <label for="foto">Foto do dia (opcional)</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+
+        <label for="obs">Observações</label>
+        <textarea id="obs" name="obs" rows="4" placeholder="Escreva o que aconteceu hoje" required></textarea>
+      </fieldset>
+
+      <button type="submit" class="botao">Salvar registro</button>
+      <p role="status"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cuidar de Perto - projeto acadêmico, UNIPÊ</p>
+  </footer>
+</body>
+</html>

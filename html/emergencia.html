@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Heitor Mendes Crispim">
+  <meta name="description" content="Cartão de emergência com dados e contatos importantes.">
+  <meta name="keywords" content="emergência, contatos, cartão, idosos">
+  <title>Cuidar de Perto - Emergência</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo-linha">
+      <a class="logo" href="../index.html">
+        <span class="logo-circulo" aria-hidden="true"></span>
+        <span class="logo-nome">Cuidar de Perto</span>
+      </a>
+      <div class="acessibilidade" role="group" aria-label="Ajustes de leitura">
+        <button type="button" id="fonte-menos">A-</button>
+        <button type="button" id="fonte-mais">A+</button>
+        <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="meu-dia.html">Meu dia</a></li>
+        <li><a href="medicamentos.html">Medicamentos</a></li>
+        <li><a href="memorias.html">Memórias</a></li>
+        <li><a href="musicas.html">Músicas</a></li>
+        <li><a href="relaxamento.html">Relaxamento</a></li>
+        <li><a href="emergencia.html" aria-current="page">Emergência</a></li>
+        <li><a href="cuidador.html">Cuidador</a></li>
+        <li><a href="duvidas.html">Dúvidas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Emergência</h1>
+
+    <aside class="aviso" aria-label="Número de emergência">
+      <p><strong>Em caso de emergência, ligue 192 (SAMU).</strong> Depois, avise a família.</p>
+    </aside>
+
+    <section aria-labelledby="t-cartao">
+      <h2 id="t-cartao">Cartão de emergência</h2>
+      <form class="formulario-demo">
+        <fieldset>
+          <legend>Dados da pessoa</legend>
+
+          <label for="nome">Nome completo</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite o nome completo" required>
+
+          <label for="nascimento">Data de nascimento</label>
+          <input type="date" id="nascimento" name="nascimento" required>
+
+          <label for="contato">Telefone de um familiar</label>
+          <input type="tel" id="contato" name="contato" placeholder="(83) 90000-0000" required>
+
+          <label for="parentesco">Parentesco desse contato</label>
+          <input type="text" id="parentesco" name="parentesco" list="parentescos" placeholder="Digite ou escolha">
+          <datalist id="parentescos">
+            <option value="Filho(a)">
+            <option value="Neto(a)">
+            <option value="Irmão(ã)">
+            <option value="Cuidador(a)">
+            <option value="Vizinho(a)">
+          </datalist>
+
+          <label for="observacoes">Observações importantes</label>
+          <textarea id="observacoes" name="observacoes" rows="4" placeholder="Ex.: o que a equipe de saúde precisa saber"></textarea>
+        </fieldset>
+
+        <button type="submit" class="botao">Salvar cartão</button>
+        <p role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cuidar de Perto - projeto acadêmico, UNIPÊ</p>
+  </footer>
+</body>
+</html>

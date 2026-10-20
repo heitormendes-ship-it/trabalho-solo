@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Heitor Mendes Crispim">
+  <meta name="description" content="Fale com a equipe do Cuidar de Perto.">
+  <meta name="keywords" content="contato, mensagem, formulário, mapa">
+  <title>Cuidar de Perto - Contato</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo-linha">
+      <a class="logo" href="../index.html">
+        <img class="logo-img" src="../img/logo.svg" alt="" width="48" height="48">
+        <span class="logo-nome">Cuidar de Perto</span>
+      </a>
+      <div class="acessibilidade" role="group" aria-label="Ajustes de leitura">
+        <button type="button" id="fonte-menos" aria-label="Diminuir a letra" title="Diminuir a letra">A-</button>
+        <button type="button" id="fonte-mais" aria-label="Aumentar a letra" title="Aumentar a letra">A+</button>
+        <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="meu-dia.html">Meu dia</a></li>
+        <li><a href="medicamentos.html">Medicamentos</a></li>
+        <li><a href="memorias.html">Memórias</a></li>
+        <li><a href="musicas.html">Músicas</a></li>
+        <li><a href="relaxamento.html">Relaxamento</a></li>
+        <li><a href="emergencia.html">Emergência</a></li>
+        <li><a href="cuidador.html">Cuidador</a></li>
+        <li><a href="duvidas.html">Dúvidas</a></li>
+        <li><a href="contato.html" aria-current="page">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Contato</h1>
+    <p>Quer tirar uma dúvida ou dar uma sugestão? Escreva para a gente.</p>
+
+    <form class="formulario-demo">
+      <fieldset>
+        <legend>Sua mensagem</legend>
+
+        <label for="c-nome">Nome</label>
+        <input type="text" id="c-nome" name="nome" placeholder="Seu nome" required>
+
+        <label for="c-email">E-mail</label>
+        <input type="email" id="c-email" name="email" placeholder="exemplo@email.com" required>
+
+        <fieldset>
+          <legend>Quem está escrevendo?</legend>
+          <label class="tarefa"><input type="radio" name="perfil" value="idoso"> Pessoa idosa</label>
+          <label class="tarefa"><input type="radio" name="perfil" value="cuidador"> Cuidador(a)</label>
+          <label class="tarefa"><input type="radio" name="perfil" value="familiar"> Familiar</label>
+        </fieldset>
+
+        <label for="c-mensagem">Mensagem</label>
+        <textarea id="c-mensagem" name="mensagem" rows="5" placeholder="Escreva aqui" required></textarea>
+
+        <label class="tarefa"><input type="checkbox" name="novidades"> Quero receber novidades</label>
+      </fieldset>
+
+      <button type="submit" class="botao">Enviar mensagem</button>
+      <p role="status"></p>
+    </form>
+
+    <section aria-labelledby="t-mapa">
+      <h2 id="t-mapa">Onde estamos</h2>
+      <iframe src="https://maps.google.com/maps?q=Joao+Pessoa&output=embed" title="Mapa de João Pessoa" width="100%" height="300" loading="lazy"></iframe>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cuidar de Perto - projeto acadêmico, UNIPÊ</p>
+  </footer>
+</body>
+</html>

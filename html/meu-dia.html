@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Heitor Mendes Crispim">
+  <meta name="description" content="Tarefas e agenda do dia, em letras grandes.">
+  <meta name="keywords" content="rotina, agenda, tarefas, idosos">
+  <title>Cuidar de Perto - Meu dia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo-linha">
+      <a class="logo" href="../index.html">
+        <span class="logo-circulo" aria-hidden="true"></span>
+        <span class="logo-nome">Cuidar de Perto</span>
+      </a>
+      <div class="acessibilidade" role="group" aria-label="Ajustes de leitura">
+        <button type="button" id="fonte-menos">A-</button>
+        <button type="button" id="fonte-mais">A+</button>
+        <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="meu-dia.html" aria-current="page">Meu dia</a></li>
+        <li><a href="medicamentos.html">Medicamentos</a></li>
+        <li><a href="memorias.html">Memórias</a></li>
+        <li><a href="musicas.html">Músicas</a></li>
+        <li><a href="relaxamento.html">Relaxamento</a></li>
+        <li><a href="emergencia.html">Emergência</a></li>
+        <li><a href="cuidador.html">Cuidador</a></li>
+        <li><a href="duvidas.html">Dúvidas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Meu dia</h1>
+    <p>Hoje é <strong data-hoje>carregando a data...</strong></p>
+
+    <section aria-labelledby="titulo-tarefas">
+      <h2 id="titulo-tarefas">Tarefas de hoje</h2>
+      <fieldset>
+        <legend>Marque o que já foi feito</legend>
+        <label class="tarefa"><input type="checkbox"> Tomar o café da manhã</label>
+        <label class="tarefa"><input type="checkbox"> Tomar o remédio das 8h</label>
+        <label class="tarefa"><input type="checkbox"> Caminhada curta</label>
+        <label class="tarefa"><input type="checkbox"> Almoçar</label>
+        <label class="tarefa"><input type="checkbox"> Ligar para a família</label>
+      </fieldset>
+      <p id="progresso-texto">0 de 5 tarefas feitas hoje</p>
+      <progress id="progresso" value="0" max="5">0%</progress>
+    </section>
+
+    <section aria-labelledby="titulo-agenda">
+      <h2 id="titulo-agenda">Agenda</h2>
+      <ol>
+        <li>08h - Remédio e café da manhã</li>
+        <li>10h - Caminhada com acompanhante</li>
+        <li>12h - Almoço</li>
+        <li>15h - Visita de um familiar</li>
+        <li>19h - Jantar</li>
+      </ol>
+    </section>
+
+    <aside class="aviso" aria-label="Dica">
+      <details>
+        <summary>Por que manter uma rotina?</summary>
+        <p>Fazer as coisas nos mesmos horários ajuda a pessoa a se sentir segura e a lembrar o que vem a seguir.</p>
+      </details>
+      <p><mark>Lembrete:</mark> os horários acima são exemplos fictícios.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cuidar de Perto - projeto acadêmico, UNIPÊ</p>
+  </footer>
+</body>
+</html>

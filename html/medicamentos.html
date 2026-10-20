@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Heitor Mendes Crispim">
+  <meta name="description" content="Horários e instruções dos remédios, com dados de exemplo.">
+  <meta name="keywords" content="medicamentos, horários, remédios, idosos">
+  <title>Cuidar de Perto - Medicamentos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../css/estilo.css">
+  <script src="../js/script.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo-linha">
+      <a class="logo" href="../index.html">
+        <span class="logo-circulo" aria-hidden="true"></span>
+        <span class="logo-nome">Cuidar de Perto</span>
+      </a>
+      <div class="acessibilidade" role="group" aria-label="Ajustes de leitura">
+        <button type="button" id="fonte-menos">A-</button>
+        <button type="button" id="fonte-mais">A+</button>
+        <button type="button" id="contraste" aria-pressed="false">Alto contraste</button>
+      </div>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="meu-dia.html">Meu dia</a></li>
+        <li><a href="medicamentos.html" aria-current="page">Medicamentos</a></li>
+        <li><a href="memorias.html">Memórias</a></li>
+        <li><a href="musicas.html">Músicas</a></li>
+        <li><a href="relaxamento.html">Relaxamento</a></li>
+        <li><a href="emergencia.html">Emergência</a></li>
+        <li><a href="cuidador.html">Cuidador</a></li>
+        <li><a href="duvidas.html">Dúvidas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Medicamentos</h1>
+    <p>Veja o que tomar, em que horário e como. Os dados abaixo são de exemplo.</p>
+
+    <section aria-labelledby="t-horarios">
+      <h2 id="t-horarios">Horários de hoje</h2>
+      <div class="tabela-rolagem">
+        <table>
+          <caption>Remédios do dia (exemplo fictício)</caption>
+          <thead>
+            <tr><th scope="col">Remédio</th><th scope="col">Dose</th><th scope="col">Horário</th><th scope="col">Como tomar</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Remédio A</td><td>1 comprimido</td><td>8h</td><td>Depois do café da manhã</td></tr>
+            <tr><td>Remédio B</td><td>1 comprimido</td><td><del>12h</del> <ins>13h</ins></td><td>Junto com o almoço</td></tr>
+            <tr><td>Remédio C</td><td>1 cápsula</td><td>20h</td><td>Antes de dormir</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Quando um horário aparece riscado, o médico trocou por um novo.</p>
+    </section>
+
+    <section aria-labelledby="t-estoque">
+      <h2 id="t-estoque">Estoque</h2>
+      <p>
+        <label for="estoque-a">Remédio A (comprimidos que restam):</label>
+        <meter id="estoque-a" value="18" min="0" max="30" low="7" high="25" optimum="25">18 de 30</meter>
+        18 de 30
+      </p>
+    </section>
+
+    <aside class="aviso" aria-label="Atenção">
+      <p><mark>Atenção:</mark> siga sempre a receita do médico. Nomes e doses desta página são exemplos fictícios.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cuidar de Perto - projeto acadêmico, UNIPÊ</p>
+  </footer>
+</body>
+</html>
